@@ -46,10 +46,12 @@ namespace MCB.Core.Infra.CrossCutting.Tests.SerializationTests
             };
 
             // Act
-            var jsonSchema = customer.GenerateJsonSchema();
+            var jsonSchema1 = customer.GenerateJsonSchema();
+            var jsonSchema2 = customer.GetType().GenerateJsonSchema();
 
             // Assert
-            jsonSchema.Should().NotBeNull();
+            jsonSchema1.Should().NotBeNull();
+            jsonSchema2.Should().NotBeNull();
         }
     }
 
