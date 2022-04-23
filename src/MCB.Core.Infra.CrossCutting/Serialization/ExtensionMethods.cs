@@ -5,18 +5,14 @@ namespace MCB.Core.Infra.CrossCutting.Serialization
     public static class ExtensionMethods
     {
         // Fields
-        private static JsonSerializerOptions _jsonSerializerOptions;
-        private static Newtonsoft.Json.Schema.Generation.JSchemaGenerator _jSchemaGenerator;
-
-        // Constructors
-        static ExtensionMethods()
-        {
-            _jsonSerializerOptions = new JsonSerializerOptions(new JsonSerializerOptions
+        private static JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions(
+            new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
-            });
-            _jSchemaGenerator = new Newtonsoft.Json.Schema.Generation.JSchemaGenerator();
-        }
+            }
+        );
+
+        private static Newtonsoft.Json.Schema.Generation.JSchemaGenerator _jSchemaGenerator = new();
 
         // Public Methods
         public static string SerializeToJson(this object obj)
