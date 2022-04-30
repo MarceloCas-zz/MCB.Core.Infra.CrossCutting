@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{550CDD9D-0AC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{2AFF81F9-E3D7-4554-8536-8BED701D69D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCB.Core.Infra.CrossCutting", "src\MCB.Core.Infra.CrossCutting\MCB.Core.Infra.CrossCutting.csproj", "{FB0595B8-F179-431D-AF56-4F471979DA38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Infra.CrossCutting", "src\MCB.Core.Infra.CrossCutting\MCB.Core.Infra.CrossCutting.csproj", "{FB0595B8-F179-431D-AF56-4F471979DA38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCB.Core.Infra.CrossCutting.Tests", "tst\MCB.Core.Infra.CrossCutting.Tests\MCB.Core.Infra.CrossCutting.Tests.csproj", "{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Infra.CrossCutting.Tests", "tst\MCB.Core.Infra.CrossCutting.Tests\MCB.Core.Infra.CrossCutting.Tests.csproj", "{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
