@@ -7,7 +7,7 @@ This project is a source code of [MCB.Core.Infra.CrossCutting](https://www.nuget
 ## Labels
 
 [![build-and-test](https://github.com/MarceloCas/MCB.Core.Infra.CrossCutting/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/MarceloCas/MCB.Core.Infra.CrossCutting/actions/workflows/build-and-test.yml)
-
+![Nuget](https://img.shields.io/nuget/v/MCB.Core.Infra.CrossCutting)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MarceloCas_MCB.Core.Infra.CrossCutting&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MarceloCas_MCB.Core.Infra.CrossCutting)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MarceloCas_MCB.Core.Infra.CrossCutting&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MarceloCas_MCB.Core.Infra.CrossCutting)
