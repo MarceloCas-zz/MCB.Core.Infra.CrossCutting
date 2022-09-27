@@ -1,12 +1,15 @@
-﻿namespace MCB.Core.Infra.CrossCutting.DateTime;
+﻿using MCB.Core.Infra.CrossCutting.Abstractions.DateTime;
 
-public static class DateTimeProvider
+namespace MCB.Core.Infra.CrossCutting.DateTime;
+
+public class DateTimeProvider
+    : IDateTimeProvider
 {
     // Properties
-    public static Func<DateTimeOffset>? GetDateCustomFunction { get; set; }
+    public Func<DateTimeOffset>? GetDateCustomFunction { get; set; }
 
     // Public Methods
-    public static DateTimeOffset GetDate()
+    public DateTimeOffset GetDate()
     {
         return GetDateCustomFunction?.Invoke() ?? DateTimeOffset.UtcNow;
     }

@@ -21,8 +21,8 @@ public class ExtensionMethodsTest
         };
 
         // Act
-        var json = customer.SerializeToJson();
-        var deserializedCustomer = json.DeserializeFromJson<Customer>();
+        var json = new JsonSerializer().SerializeToJson(customer);
+        var deserializedCustomer = new JsonSerializer().DeserializeFromJson<Customer>(json);
 
         // Assert
         customer.Id.Should().Be(deserializedCustomer.Id);
@@ -46,8 +46,8 @@ public class ExtensionMethodsTest
         };
 
         // Act
-        var jsonSchema1 = customer.GenerateJsonSchema();
-        var jsonSchema2 = customer.GetType().GenerateJsonSchema();
+        var jsonSchema1 = new JsonSerializer().GenerateJsonSchema(customer);
+        var jsonSchema2 = new JsonSerializer().GenerateJsonSchema(customer);
 
         // Assert
         jsonSchema1.Should().NotBeNull();

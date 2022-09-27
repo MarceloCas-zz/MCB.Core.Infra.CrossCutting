@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using MCB.Core.Infra.CrossCutting.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +16,7 @@ public class EnumUtilsTest
 
         // Act
         for (int i = 0; i < 100; i++)
-            dummyEnumCollection.Add(EnumUtils.GetRandomEnumValue<DummyEnum>());
+            dummyEnumCollection.Add(new Utils.Utils().GetRandomEnumValue<DummyEnum>());
 
         // Assert
         foreach (var dummyEnum in dummyEnumCollection)
