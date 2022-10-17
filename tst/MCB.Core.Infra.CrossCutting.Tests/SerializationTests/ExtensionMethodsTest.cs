@@ -1,7 +1,7 @@
 using System;
 using Xunit;
-using MCB.Core.Infra.CrossCutting.Serialization;
 using FluentAssertions;
+using MCB.Core.Infra.CrossCutting.Serialization;
 
 namespace MCB.Core.Infra.CrossCutting.Tests.SerializationTests;
 

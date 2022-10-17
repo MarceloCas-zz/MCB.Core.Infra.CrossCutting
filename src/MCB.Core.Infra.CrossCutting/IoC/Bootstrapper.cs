@@ -13,6 +13,7 @@ public static class Bootstrapper
     {
         dependencyInjectionContainer.RegisterSingleton<IDateTimeProvider, DateTimeProvider>();
         dependencyInjectionContainer.RegisterSingleton<IJsonSerializer, JsonSerializer>();
+        dependencyInjectionContainer.RegisterSingleton<IProtobufSerializer, ProtobufSerializer>();
         dependencyInjectionContainer.RegisterSingleton<IUtils, Utils.Utils>();
     }
 }

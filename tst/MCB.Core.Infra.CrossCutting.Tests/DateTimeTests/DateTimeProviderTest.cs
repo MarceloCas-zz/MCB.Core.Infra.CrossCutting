@@ -1,7 +1,10 @@
 ﻿using FluentAssertions;
 using MCB.Core.Infra.CrossCutting.DateTime;
 using System;
+using System.Runtime.CompilerServices;
 using Xunit;
+
+[assembly:InternalsVisibleTo("MCB.Core.Infra.CrossCutting.Tests")]
 
 namespace MCB.Core.Infra.CrossCutting.Tests.DateTimeTests;
 

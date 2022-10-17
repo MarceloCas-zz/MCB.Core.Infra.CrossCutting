@@ -1,8 +1,11 @@
 ﻿using MCB.Core.Infra.CrossCutting.Abstractions.DateTime;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("MCB.Core.Infra.CrossCutting.Tests")]
 
 namespace MCB.Core.Infra.CrossCutting.DateTime;
 
-public class DateTimeProvider
+internal class DateTimeProvider
     : IDateTimeProvider
 {
     // Properties
